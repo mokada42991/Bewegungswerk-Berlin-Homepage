@@ -1,2 +1,2 @@
-Bewegungswerk Berlin Homepage
+BewegungsWerk Berlin Homepage
 =============================

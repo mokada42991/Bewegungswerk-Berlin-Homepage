@@ -3,22 +3,35 @@ header
     width: 100%
     background: black
     position: fixed
-    z-index: 1
+    z-index: 3
     a
         padding: 10px 0 0 15px
         color: white
         float: left
         font-size: 20px
-    a.number
+    a.header-number
         padding: 10px 15px 0 0
         float: right
     a:hover
         cursor: pointer
+@media (max-width: 500px)
+    header
+        height: 30px
+        a
+            padding-top: 7px
+            font-size: 15px
+        a.header-number
+            padding-top: 7px
 .hero
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
     height: 75vh
     min-height: 450px
     width: 100%
-    background-color: #211f1f
+    background-color: black
     .background
         position: absolute
         display: none
@@ -41,6 +54,47 @@ header
             image: url(../img/boxer.jpeg)
             position: center
             size: cover
-.nav
+    .arrow
+        display: none
+        position: absolute
+        z-index: 1
+        margin-top: 30vh
+        margin-left: -15px
+        .arrow-border
+            position: absolute
+            width: 30px
+            height: 30px
+            border-left: 2px solid white
+            border-bottom: 2px solid white
+            transform: rotate(-45deg)
+    @media (max-width: 500px)
+        .arrow
+            display: block
+
+nav
     height: 60px
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
     background: black
+    a
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 200px
+        font-size: 15px
+        color: white
+        border-right: 1px solid #2B292E
+        border-left: 1px solid #2B292E
+        transition: all 0.3s ease-in-out
+    a:hover
+        background: #1a1a1a
+@media (max-width: 500px)
+    nav
+        display: none
+
+#team
+    background: white
+    height: 1000px
