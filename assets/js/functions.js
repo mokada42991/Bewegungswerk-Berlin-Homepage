@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    console.log("yes");
-
+    // Hero background slideshow
     var currentPhoto = 0;
 
     $('.background').eq(currentPhoto).addClass('current-photo').css('display','block');
@@ -16,6 +15,14 @@ $(document).ready(function() {
 
         }, 6000);
     }
+
+    // Navbar scroll animation
+    $("nav a").on("click", function() {
+        var href = $(this).attr('href');
+        $("html, body").animate({
+            scrollTop: $(href).offset().top
+        }, 1700, "easeInOutExpo");
+    });
 
     backgroundSlideshow();
 });
