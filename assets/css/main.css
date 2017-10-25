@@ -532,33 +532,9 @@ header {
     margin: 7px 30px 0 0;
     padding: 0;
     float: right; }
-    header a.facebook-link .facebook-svg {
-      height: 28px;
-      width: 28px;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-      header a.facebook-link .facebook-svg path {
-        fill: white;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-    header a.facebook-link svg:hover {
-      cursor: pointer; }
-      header a.facebook-link svg:hover path {
-        fill: #3A559F;
-        cursor: pointer; }
   header a.header-number {
     padding: 10px 15px 0 0;
     float: right; }
-    header a.header-number .number-svg {
-      height: 18px;
-      width: 18px;
-      float: left;
-      margin: 3px 10px 0 0; }
-      header a.header-number .number-svg path {
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-  header a.header-number:hover svg path {
-    fill: #b3b3b3; }
   header a:hover {
     color: #b3b3b3;
     cursor: pointer; }
@@ -571,15 +547,8 @@ header {
       font-size: 15px; }
     header a.facebook-link {
       margin: 5px 15px 0 0; }
-      header a.facebook-link .facebook-svg {
-        height: 20px;
-        width: 20px; }
     header a.header-number {
-      padding: 7px 10px 0 0; }
-      header a.header-number .number-svg {
-        height: 12px;
-        width: 12px;
-        margin: 3px 7px 0 0; } }
+      padding: 7px 10px 0 0; } }
 
 .hero {
   display: -webkit-box;
@@ -611,15 +580,15 @@ header {
     width: 100%;
     background-size: cover; }
   .hero .bg-1 {
-    background-color: red;
+    background-image: url(../img/hero/biker.jpeg);
     background-position: center;
     background-size: cover; }
   .hero .bg-2 {
-    background-color: blue;
+    background-image: url(../img/hero/dancers.jpeg);
     background-position: center;
     background-size: cover; }
   .hero .bg-3 {
-    background-color: white;
+    background-image: url(../img/hero/boxer.jpeg);
     background-position: center;
     background-size: cover; }
   .hero .arrow {
