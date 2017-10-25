@@ -521,7 +521,7 @@ header {
   background: black;
   position: fixed;
   z-index: 3; }
-  header a {
+  header .header-logo {
     padding: 10px 0 0 15px;
     color: white;
     float: left;
@@ -530,8 +530,11 @@ header {
     transition: all 0.3s ease-in-out; }
   header .header-number {
     padding: 10px 15px 0 0;
+    color: white;
     float: right;
-    color: red; }
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
   header a:hover {
     color: #b3b3b3;
     cursor: pointer; }
@@ -539,7 +542,7 @@ header {
 @media (max-width: 500px) {
   header {
     height: 30px; }
-    header a {
+    header .header-logo {
       padding: 7px 0 0 10px;
       font-size: 15px; }
     header .header-number {
