@@ -628,10 +628,10 @@ header {
     background-size: cover; }
   .hero .arrow {
     display: none;
-    position: absolute;
+    position: relative;
     z-index: 1;
     margin-top: 71vh;
-    margin-left: -15px; }
+    margin-left: -32px; }
     .hero .arrow .arrow-border {
       position: absolute;
       width: 30px;
@@ -816,7 +816,7 @@ nav {
           padding: 0;
           list-style-position: inside; }
           #team .team-row .team-member .team-member-bio ul li {
-            font-size: 11px;
+            font-size: 10px;
             color: #919191; }
             #team .team-row .team-member .team-member-bio ul li span {
               position: relative;
