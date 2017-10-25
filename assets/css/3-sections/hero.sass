@@ -10,9 +10,36 @@ header
         float: left
         font-size: 20px
         transition: all 0.3s ease-in-out
+    a.facebook-link
+        margin: 7px 30px 0 0
+        padding: 0
+        float: right
+        svg
+            height: 28px
+            width: 28px
+            transition: all 0.3s ease-in-out
+            path
+                fill: white
+                transition: all 0.3s ease-in-out
+        svg:hover
+            cursor: pointer
+            path
+                fill: #3A559F
+                cursor: pointer
     a.header-number
         padding: 10px 15px 0 0
         float: right
+        svg
+            height: 18px
+            width: 18px
+            float: left
+            margin: 3px 10px 0 0
+            path
+                transition: all 0.3s ease-in-out
+    a.header-number:hover
+        svg
+            path
+                fill: #b3b3b3
     a:hover
         color: #b3b3b3
         cursor: pointer
@@ -20,10 +47,20 @@ header
     header
         height: 30px
         a
-            padding-top: 7px
+            padding: 7px 0 0 10px
             font-size: 15px
+        a.facebook-link
+            margin: 5px 15px 0 0
+            svg
+                height: 20px
+                width: 20px
         a.header-number
-            padding-top: 7px
+            padding: 7px 10px 0 0
+            svg
+                height: 12px
+                width: 12px
+                margin: 3px 7px 0 0
+
 .hero
     position: relative
     display: flex
@@ -43,17 +80,17 @@ header
         background-size: cover
     .bg-1
         background:
-            image: url(../img/biker2.jpeg)
+            image: url(../img/hero/biker.jpeg)
             position: center
             size: cover
     .bg-2
         background:
-            image: url(../img/dancers2.jpeg)
+            image: url(../img/hero/dancers.jpeg)
             position: center
             size: cover
     .bg-3
         background:
-            image: url(../img/boxer.jpeg)
+            image: url(../img/hero/boxer.jpeg)
             position: center
             size: cover
     .arrow
