@@ -21,5 +21,5 @@ $(document).ready(function() {
         }, 1700, "easeInOutExpo");
     });
 
-    backgroundSlideshow();
+    //backgroundSlideshow();
 });
