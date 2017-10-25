@@ -530,7 +530,8 @@ header {
     transition: all 0.3s ease-in-out; }
   header .header-number {
     padding: 10px 15px 0 0;
-    float: right; }
+    float: right;
+    color: red; }
   header a:hover {
     color: #b3b3b3;
     cursor: pointer; }
