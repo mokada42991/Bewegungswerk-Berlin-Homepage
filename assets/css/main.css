@@ -582,7 +582,6 @@ header {
         margin: 3px 7px 0 0; } }
 
 .hero {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -612,15 +611,15 @@ header {
     width: 100%;
     background-size: cover; }
   .hero .bg-1 {
-    background-image: url(../img/hero/biker.jpeg);
+    background-color: red;
     background-position: center;
     background-size: cover; }
   .hero .bg-2 {
-    background-image: url(../img/hero/dancers.jpeg);
+    background-color: blue;
     background-position: center;
     background-size: cover; }
   .hero .bg-3 {
-    background-image: url(../img/hero/boxer.jpeg);
+    background-color: white;
     background-position: center;
     background-size: cover; }
   .hero .arrow {
