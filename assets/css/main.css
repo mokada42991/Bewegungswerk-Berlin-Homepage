@@ -528,11 +528,7 @@ header {
     font-size: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  header a.facebook-link {
-    margin: 7px 30px 0 0;
-    padding: 0;
-    float: right; }
-  header a.header-number {
+  header .header-number {
     padding: 10px 15px 0 0;
     float: right; }
   header a:hover {
@@ -545,9 +541,7 @@ header {
     header a {
       padding: 7px 0 0 10px;
       font-size: 15px; }
-    header a.facebook-link {
-      margin: 5px 15px 0 0; }
-    header a.header-number {
+    header .header-number {
       padding: 7px 10px 0 0; } }
 
 .hero {
