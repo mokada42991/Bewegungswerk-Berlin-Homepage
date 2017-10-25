@@ -528,6 +528,9 @@ header {
     font-size: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+  header .header-logo:hover {
+    color: #b3b3b3;
+    cursor: pointer; }
   header .header-number {
     padding: 10px 15px 0 0;
     color: white;
@@ -535,9 +538,37 @@ header {
     font-size: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  header a:hover {
+    header .header-number .header-number-svg {
+      height: 18px;
+      width: 18px;
+      float: left;
+      margin: 3px 10px 0 0; }
+      header .header-number .header-number-svg path {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+  header .header-number:hover {
     color: #b3b3b3;
     cursor: pointer; }
+    header .header-number:hover .header-number-svg path {
+      fill: #b3b3b3; }
+  header .facebook-link {
+    margin: 7px 30px 0 0;
+    padding: 0;
+    float: right; }
+    header .facebook-link .facebook-link-svg {
+      height: 28px;
+      width: 28px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      header .facebook-link .facebook-link-svg path {
+        fill: white;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    header .facebook-link .facebook-link-svg:hover {
+      cursor: pointer; }
+      header .facebook-link .facebook-link-svg:hover path {
+        fill: #3A559F;
+        cursor: pointer; }
 
 @media (max-width: 500px) {
   header {
@@ -545,8 +576,18 @@ header {
     header .header-logo {
       padding: 7px 0 0 10px;
       font-size: 15px; }
+    header .facebook-link {
+      margin: 5px 15px 0 0; }
+      header .facebook-link .facebook-link-svg {
+        height: 20px;
+        width: 20px; }
     header .header-number {
-      padding: 7px 10px 0 0; } }
+      padding: 7px 10px 0 0;
+      font-size: 15px; }
+      header .header-number .header-number-svg {
+        height: 12px;
+        width: 12px;
+        margin: 3px 7px 0 0; } }
 
 .hero {
   display: -webkit-box;
