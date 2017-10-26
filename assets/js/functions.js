@@ -27,5 +27,20 @@ $(document).ready(function() {
         }, 1700, "easeInOutExpo");
     });
 
+    // Detect if user is on mobile and change href of facebook link to open in the mobile app.
+    function detectMobile() {
+        if( navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+        ) {
+            $(".facebook-link").attr("href", "fb://profile/457541911052222");
+        }
+    };
+
+    detectMobile();
     //backgroundSlideshow();
 });
