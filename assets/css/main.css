@@ -532,6 +532,9 @@ body {
           border-bottom-left-radius: 8px;
   background: #293133; }
 
+.header-logo:hover {
+  cursor: pointer; }
+
 .header-bar {
   height: 40px;
   width: 100%;
@@ -540,16 +543,26 @@ body {
   text-align: center;
   line-height: 40px;
   vertical-align: middle;
-  color: white;
   font-size: 22px;
   background: black; }
+  .header-bar a {
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .header-bar .phone-icon {
+    height: 17px;
+    width: 17px;
+    margin-right: 8px; }
+  .header-bar a:hover {
+    color: #bfbfbf;
+    cursor: pointer; }
 
 .facebook-link {
   position: fixed;
   z-index: 3;
   top: 0;
   right: 0;
-  margin: 4px 80px 0 0; }
+  margin: 4px 40px 0 0; }
   .facebook-link svg {
     height: 30px;
     width: 30px; }
@@ -576,8 +589,12 @@ body {
     height: 30px;
     line-height: 30px;
     font-size: 18px; }
+    .header-bar .phone-icon {
+      height: 14px;
+      width: 14px;
+      margin-right: 8px; }
   .facebook-link {
-    margin: 3px 40px 0 0; }
+    margin: 3px 30px 0 0; }
     .facebook-link svg {
       height: 23px;
       width: 23px; } }
@@ -595,8 +612,12 @@ body {
     height: 25px;
     line-height: 25px;
     font-size: 16px; }
+    .header-bar .phone-icon {
+      height: 12px;
+      width: 12px;
+      margin-right: 5px; }
   .facebook-link {
-    margin: 2px 30px 0 0; }
+    margin: 2px 15px 0 0; }
     .facebook-link svg {
       height: 20px;
       width: 20px; } }
@@ -701,6 +722,9 @@ nav {
     transition: all 0.3s ease-in-out; }
   nav a:hover {
     background: #1a1a1a; }
+  @media (max-width: 650px) {
+    nav a {
+      font-size: 13px; } }
 
 @media (max-width: 500px) {
   nav {

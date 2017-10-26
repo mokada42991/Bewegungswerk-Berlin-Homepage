@@ -17,7 +17,13 @@ $(document).ready(function() {
     $("nav a").on("click", function() {
         var href = $(this).attr('href');
         $("html, body").animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(href).offset().top - 20
+        }, 1700, "easeInOutExpo");
+    });
+    // Back to top scroll animation
+    $(".header-logo").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $(".hero").offset().top
         }, 1700, "easeInOutExpo");
     });
 

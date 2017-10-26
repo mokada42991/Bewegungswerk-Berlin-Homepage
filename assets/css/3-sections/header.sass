@@ -12,6 +12,8 @@
     border-bottom-right-radius: 8px
     border-bottom-left-radius: 8px
     background: #293133
+.header-logo:hover
+    cursor: pointer
 .header-bar
     height: 40px
     width: 100%
@@ -20,15 +22,24 @@
     text-align: center
     line-height: 40px
     vertical-align: middle
-    color: white
     font-size: 22px
     background: black
+    a
+        color: white
+        transition: all 0.3s ease-in-out
+    .phone-icon
+        height: 17px
+        width: 17px
+        margin-right: 8px
+    a:hover
+        color: #bfbfbf
+        cursor: pointer
 .facebook-link
     position: fixed
     z-index: 3
     top: 0
     right: 0
-    margin: 4px 80px 0 0
+    margin: 4px 40px 0 0
     svg
         height: 30px
         width: 30px
@@ -51,8 +62,12 @@
         height: 30px
         line-height: 30px
         font-size: 18px
+        .phone-icon
+            height: 14px
+            width: 14px
+            margin-right: 8px
     .facebook-link
-        margin: 3px 40px 0 0
+        margin: 3px 30px 0 0
         svg
             height: 23px
             width: 23px
@@ -68,8 +83,12 @@
         height: 25px
         line-height: 25px
         font-size: 16px
+        .phone-icon
+            height: 12px
+            width: 12px
+            margin-right: 5px
     .facebook-link
-        margin: 2px 30px 0 0
+        margin: 2px 15px 0 0
         svg
             height: 20px
             width: 20px
