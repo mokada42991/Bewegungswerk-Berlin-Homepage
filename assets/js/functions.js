@@ -1,9 +1,7 @@
 $(document).ready(function() {
     // Hero background slideshow
     var currentPhoto = 0;
-
     $('.background').eq(currentPhoto).addClass('current-photo').css('display','block');
-
     function backgroundSlideshow() {
         looper = setInterval(function() {
             $('.current-photo').removeClass('current-photo').fadeOut(2000, 'easeInOutQuad');
@@ -27,7 +25,7 @@ $(document).ready(function() {
         }, 1700, "easeInOutExpo");
     });
 
-    // Detect if user is on mobile and change href of facebook link to open in the mobile app.
+    // Detect if user is on mobile and change the facebook link to the appropriate version.
     function detectMobile() {
         if( navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)

@@ -521,16 +521,14 @@ body {
   margin-left: 20px;
   position: fixed;
   z-index: 3;
-  text-align: center;
-  line-height: 80px;
-  vertical-align: middle;
-  color: white;
-  font-size: 18px;
   -webkit-border-bottom-right-radius: 8px;
           border-bottom-right-radius: 8px;
   -webkit-border-bottom-left-radius: 8px;
           border-bottom-left-radius: 8px;
-  background: #293133; }
+  background: #293133;
+  overflow: hidden; }
+  .header-logo svg {
+    width: 230px; }
 
 .header-logo:hover {
   cursor: pointer; }
@@ -565,7 +563,9 @@ body {
   margin: 4px 40px 0 0; }
   .facebook-link svg {
     height: 30px;
-    width: 30px; }
+    width: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     .facebook-link svg path {
       fill: white;
       -webkit-transition: all 0.3s ease-in-out;
@@ -573,6 +573,8 @@ body {
 
 .facebook-link:hover {
   cursor: pointer; }
+  .facebook-link:hover svg {
+    background: white; }
   .facebook-link:hover path {
     fill: #3A559F; }
 
@@ -581,10 +583,11 @@ body {
     height: 60px;
     width: 130px;
     margin-left: 0px;
-    line-height: 60px;
-    font-size: 14px;
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
+    .header-logo svg {
+      width: 180px;
+      margin: -42px 0 0 -2px; }
   .header-bar {
     height: 30px;
     line-height: 30px;
@@ -604,10 +607,11 @@ body {
     height: 50px;
     width: 80px;
     margin-left: 0px;
-    line-height: 50px;
-    font-size: 9px;
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
+    .header-logo svg {
+      width: 110px;
+      margin: -94px 0 0 -1px; }
   .header-bar {
     height: 25px;
     line-height: 25px;
@@ -636,6 +640,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 75vh;
   min-height: 450px;
   width: 100%;
@@ -647,7 +655,7 @@ body {
     min-height: 450px;
     width: 100%;
     background-size: contain; }
-  .hero .bg-1 {
+  .hero .bg-3 {
     background-image: url(../img/hero/biker.jpeg);
     background-position: center;
     background-size: cover; }
@@ -655,15 +663,20 @@ body {
     background-image: url(../img/hero/dancers.jpeg);
     background-position: center;
     background-size: cover; }
-  .hero .bg-3 {
+  .hero .bg-1 {
     background-image: url(../img/hero/boxer.jpeg);
     background-position: center;
     background-size: cover; }
+  .hero svg {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: auto; }
   .hero .arrow {
     display: none;
     position: relative;
     z-index: 1;
-    margin-top: 71vh;
+    margin-top: 10px;
     margin-left: -32px; }
     .hero .arrow .arrow-border {
       position: absolute;

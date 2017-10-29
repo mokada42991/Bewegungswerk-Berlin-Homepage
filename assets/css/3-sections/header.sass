@@ -4,14 +4,12 @@
     margin-left: 20px
     position: fixed
     z-index: 3
-    text-align: center
-    line-height: 80px
-    vertical-align: middle
-    color: white
-    font-size: 18px
     border-bottom-right-radius: 8px
     border-bottom-left-radius: 8px
     background: #293133
+    overflow: hidden
+    svg
+        width: 230px
 .header-logo:hover
     cursor: pointer
 .header-bar
@@ -43,11 +41,14 @@
     svg
         height: 30px
         width: 30px
+        transition: all 0.3s ease-in-out
         path
             fill: white
             transition: all 0.3s ease-in-out
 .facebook-link:hover
     cursor: pointer
+    svg
+        background: white
     path
         fill: #3A559F
 @media (max-width: 650px)
@@ -55,9 +56,10 @@
         height: 60px
         width: 130px
         margin-left: 0px
-        line-height: 60px
-        font-size: 14px
         border-bottom-left-radius: 0px
+        svg
+            width: 180px
+            margin: -42px 0 0 -2px
     .header-bar
         height: 30px
         line-height: 30px
@@ -76,9 +78,10 @@
         height: 50px
         width: 80px
         margin-left: 0px
-        line-height: 50px
-        font-size: 9px
         border-bottom-left-radius: 0px
+        svg
+            width: 110px
+            margin: -94px 0 0 -1px
     .header-bar
         height: 25px
         line-height: 25px
