@@ -640,10 +640,6 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 75vh;
   min-height: 450px;
   width: 100%;
@@ -667,16 +663,37 @@ body {
     background-image: url(../img/hero/boxer.jpeg);
     background-position: center;
     background-size: cover; }
-  .hero svg {
-    position: relative;
-    z-index: 1;
-    width: 100vw;
-    height: auto; }
+  .hero .logo {
+    height: 75vh;
+    min-height: 450px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .hero .logo svg {
+      position: relative;
+      z-index: 1;
+      width: 97vw;
+      height: auto; }
   .hero .arrow {
     display: none;
     position: relative;
     z-index: 1;
-    margin-top: 10px;
+    margin-top: -25px;
     margin-left: -32px; }
     .hero .arrow .arrow-border {
       position: absolute;
