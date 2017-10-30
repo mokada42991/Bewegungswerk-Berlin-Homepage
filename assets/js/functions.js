@@ -18,10 +18,10 @@ $(document).ready(function() {
     $('.background').eq(currentPhoto).addClass('current-photo').css('display','block');
     function backgroundSlideshow() {
         looper = setInterval(function() {
-            $('.current-photo').removeClass('current-photo').fadeOut(2000);
+            $('.current-photo').removeClass('current-photo').stop().fadeTo(2000, 0);
             if (currentPhoto == 2) currentPhoto = 0;
             else currentPhoto++;
-            $('.background').eq(currentPhoto).addClass('current-photo').css('display','none').fadeIn(2000);
+            $('.background').eq(currentPhoto).addClass('current-photo').css('display','none').stop().fadeTo(2000, 1);
         }, 6000);
     }
 
