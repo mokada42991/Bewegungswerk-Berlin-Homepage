@@ -39,7 +39,7 @@ $(document).ready(function() {
         }, 1700, "easeInOutExpo");
     });
 
-    // Show and hide therapie info button functions
+    // Show and hide therapie info
     $(".open-info").on("click", function() {
         $(this).next().fadeIn("slow");
         $(this).next().css("display", "flex");
@@ -47,6 +47,15 @@ $(document).ready(function() {
     $(".close-info").on("click", function() {
         $(this).parent().fadeOut("slow");
     });
+
+    // Change the opacity of the partner logo on hover
+    $("#partner .partner-row .partner-list-container .partner-list .partner a").hover(
+        function() {
+            $(this).prev().css("opacity", "0.5")
+        }, function() {
+            $(this).prev().css("opacity", "0.2")
+        }
+    );
 
     detectMobile();
     backgroundSlideshow();

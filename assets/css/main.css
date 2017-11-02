@@ -543,8 +543,12 @@ body {
           border-bottom-left-radius: 8px;
   background: #293133;
   overflow: hidden; }
-  .header-logo svg {
-    width: 230px; }
+  .header-logo .logo-image {
+    width: 140px; }
+  .header-logo .logo-text {
+    position: absolute;
+    width: 170px;
+    margin-left: -85px; }
 
 .header-logo:hover {
   cursor: pointer; }
@@ -601,9 +605,13 @@ body {
     margin-left: 0px;
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
-    .header-logo svg {
-      width: 180px;
-      margin: -42px 0 0 -2px; }
+    .header-logo .logo-image {
+      width: 100px;
+      margin: -53px 0 0 0; }
+    .header-logo .logo-text {
+      position: absolute;
+      width: 128px;
+      margin: -47px 0 0 -60px; }
   .header-bar {
     height: 30px;
     line-height: 30px;
@@ -625,9 +633,13 @@ body {
     margin-left: 0px;
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
-    .header-logo svg {
-      width: 110px;
-      margin: -94px 0 0 -1px; }
+    .header-logo .logo-image {
+      width: 60px;
+      margin: -100px 0 0 0; }
+    .header-logo .logo-text {
+      position: absolute;
+      width: 80px;
+      margin: -94px 0 0 -36px; }
   .header-bar {
     height: 25px;
     line-height: 25px;
@@ -1175,11 +1187,14 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.7))), url(../img/partners/partners-bg.jpg);
-    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.7)), url(../img/partners/partners-bg.jpg);
-    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.7)), url(../img/partners/partners-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.6))), url(../img/partners/partners-bg.jpg);
+    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/partners/partners-bg.jpg);
+    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/partners/partners-bg.jpg);
     background-position: center;
     background-size: cover; }
+    #partner .partner-row-container p {
+      font-size: 16px;
+      margin: 20px 120px; }
   #partner .partner-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1190,22 +1205,24 @@ nav {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 97%;
-    padding: 50px 0 80px 0; }
+    padding: 20px 0 80px 0; }
     #partner .partner-row .logo-container {
       overflow: hidden;
-      width: 250px;
-      height: 100px;
-      margin-right: 15px; }
-      #partner .partner-row .logo-container svg {
-        width: 250px; }
+      width: 300px;
+      height: 120px;
+      border: 1px solid #e6e6e6;
+      background: rgba(51, 51, 51, 0.7); }
+      #partner .partner-row .logo-container .logo-image {
+        width: 130px; }
+      #partner .partner-row .logo-container .logo-text {
+        position: absolute;
+        width: 215px;
+        margin-left: -47px; }
     #partner .partner-row .partner-x svg {
       width: 40px;
       height: 40px; }
@@ -1218,7 +1235,8 @@ nav {
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      margin: 0 0 0 10px; }
       #partner .partner-row .partner-list-container .partner-list {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1232,8 +1250,7 @@ nav {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center;
-        margin-left: 10px; }
+                justify-content: center; }
         #partner .partner-row .partner-list-container .partner-list .partner {
           display: -webkit-box;
           display: -webkit-flex;
@@ -1244,67 +1261,123 @@ nav {
           -webkit-flex-direction: row;
               -ms-flex-direction: row;
                   flex-direction: row;
-          margin-bottom: 30px;
-          min-height: 75px; }
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 120px;
+          width: 300px;
+          border: 1px solid #e6e6e6;
+          overflow: hidden;
+          position: relative;
+          margin: 0 10px 10px 0;
+          background: rgba(51, 51, 51, 0.7); }
           #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
-            height: 75px;
-            width: auto; }
+            position: absolute;
+            float: left;
+            z-index: 0;
+            height: 150px;
+            width: auto;
+            opacity: 0.2;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
           #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
-            height: 65px;
-            width: auto; }
-          #partner .partner-row .partner-list-container .partner-list .partner h3 {
-            font-size: 18px;
+            position: absolute;
+            float: left;
+            z-index: 0;
+            height: 150px;
+            width: auto;
+            opacity: 0.2;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+          #partner .partner-row .partner-list-container .partner-list .partner a {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
             color: white;
-            padding: 20px 0 0 10px;
-            margin: 0; }
-    @media (max-width: 950px) {
+            margin-left: 25px;
+            z-index: 1; }
+          #partner .partner-row .partner-list-container .partner-list .partner a:hover {
+            cursor: pointer; }
+    @media (max-width: 970px) {
       #partner .partner-row .logo-container {
-        width: 190px;
-        margin-right: 5px; }
-        #partner .partner-row .logo-container svg {
-          margin-top: -35px;
-          width: 190px; }
-      #partner .partner-row .partner-x svg {
-        width: 30px;
-        height: 30px; }
+        width: 220px;
+        height: 90px; }
+        #partner .partner-row .logo-container .logo-image {
+          width: 100px;
+          margin: -45px 0 0 -3px; }
+        #partner .partner-row .logo-container .logo-text {
+          width: 160px;
+          margin: -50px 0 0 -36px; }
       #partner .partner-row .partner-list-container .partner-list .partner {
-        min-height: 50px; }
+        width: 220px;
+        height: 90px; }
         #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
-          height: 50px; }
+          height: 110px; }
         #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
-          height: 45px; }
-        #partner .partner-row .partner-list-container .partner-list .partner h3 {
+          height: 110px; }
+        #partner .partner-row .partner-list-container .partner-list .partner a {
           font-size: 16px;
-          padding: 12px 0 0 10px; } }
-    @media (max-width: 530px) {
-      #partner .partner-row .partner-list-container .partner-list {
-        margin: 7px; }
-        #partner .partner-row .partner-list-container .partner-list .partner {
-          min-height: 35px; }
-          #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
-            height: 35px; }
-          #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
-            height: 30px; }
-          #partner .partner-row .partner-list-container .partner-list .partner h3 {
-            font-size: 13px;
-            padding: 6px 0 0 4px; } }
-  @media (max-width: 760px) {
+          margin-left: 15px; } }
+  @media (max-width: 720px) {
     #partner .partner-row {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 30px 0 80px 0; }
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 20px 0 50px 0; }
       #partner .partner-row .logo-container {
-        width: 250px;
-        height: 60px;
-        margin-right: 0px;
-        margin-bottom: 10px; }
-        #partner .partner-row .logo-container svg {
-          width: 250px; }
+        width: 220px;
+        height: 90px; }
+        #partner .partner-row .logo-container .logo-image {
+          width: 100px;
+          margin: -48px 0 0 -3px; }
+        #partner .partner-row .logo-container .logo-text {
+          width: 160px;
+          margin: -50px 0 0 -36px; }
       #partner .partner-row .partner-list-container {
-        margin-top: 30px; } }
+        margin: 10px 0 0 0; }
+        #partner .partner-row .partner-list-container .partner-list .partner {
+          width: 220px;
+          height: 90px;
+          margin: 0 5px 10px 5px; }
+          #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
+            height: 110px; }
+          #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
+            height: 110px; }
+          #partner .partner-row .partner-list-container .partner-list .partner a {
+            font-size: 16px;
+            margin-left: 20px; } }
+  @media (max-width: 475px) {
+    #partner .partner-row {
+      padding: 0 0 50px 0; }
+      #partner .partner-row .logo-container {
+        width: 180px;
+        height: 72px; }
+        #partner .partner-row .logo-container .logo-image {
+          width: 90px;
+          margin: -65px 0 0 -5px; }
+        #partner .partner-row .logo-container .logo-text {
+          width: 130px;
+          margin: -75px 0 0 -35px; }
+      #partner .partner-row .partner-list-container {
+        margin: 10px 0 0 0; }
+        #partner .partner-row .partner-list-container .partner-list .partner {
+          width: 150px;
+          height: 60px;
+          margin: 0 3px 10px 3px; }
+          #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
+            height: 100px; }
+          #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
+            height: 80px; }
+          #partner .partner-row .partner-list-container .partner-list .partner a {
+            font-size: 13px;
+            margin-left: 7px; } }
 
 @media (max-width: 550px) {
   #partner {
