@@ -51,7 +51,7 @@ $(document).ready(function() {
     // Change the opacity of the partner logo on hover
     $("#partner .partner-row .partner-list-container .partner-list .partner a").hover(
         function() {
-            $(this).prev().css("opacity", "0.5")
+            $(this).prev().css("opacity", "0.4")
         }, function() {
             $(this).prev().css("opacity", "0.2")
         }
