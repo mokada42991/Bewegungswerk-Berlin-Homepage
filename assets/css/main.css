@@ -1281,7 +1281,6 @@ nav {
             transition: all 0.3s ease-in-out; }
           #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
             position: absolute;
-            float: left;
             z-index: 0;
             height: 150px;
             width: auto;
@@ -1326,7 +1325,6 @@ nav {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: -15px;
       padding: 0 0 50px 0; }
       #partner .partner-row .logo-container {
         display: none; }
@@ -1343,15 +1341,6 @@ nav {
           #partner .partner-row .partner-list-container .partner-list .partner a {
             font-size: 16px; } }
   @media (max-width: 475px) {
-    #partner .partner-row .logo-container {
-      width: 180px;
-      height: 72px; }
-      #partner .partner-row .logo-container .logo-image {
-        width: 90px;
-        margin: -65px 0 0 -5px; }
-      #partner .partner-row .logo-container .logo-text {
-        width: 130px;
-        margin: -75px 0 0 -35px; }
     #partner .partner-row .partner-list-container {
       margin: 0; }
       #partner .partner-row .partner-list-container .partner-list .partner {
