@@ -1282,6 +1282,11 @@ nav {
             transition: all 0.3s ease-in-out; }
           #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             z-index: 0;
             height: 150px;
             width: auto;
@@ -1346,12 +1351,12 @@ nav {
       margin: 0; }
       #partner .partner-row .partner-list-container .partner-list .partner {
         width: 154px;
-        height: 62px;
+        height: 90px;
         margin: 0 2px 10px 2px; }
         #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
-          height: 100px; }
+          height: 110px; }
         #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
-          height: 80px; }
+          height: 100px; }
         #partner .partner-row .partner-list-container .partner-list .partner a {
           font-size: 11px; } }
 
