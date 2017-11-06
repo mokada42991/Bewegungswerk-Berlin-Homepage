@@ -1269,6 +1269,11 @@ nav {
           background: rgba(26, 26, 26, 0.7); }
           #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             z-index: 0;
             height: 150px;
             width: auto;
