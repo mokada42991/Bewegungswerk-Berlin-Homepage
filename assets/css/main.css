@@ -1298,7 +1298,8 @@ nav {
             font-size: 20px;
             font-weight: bolder;
             color: white;
-            z-index: 1; }
+            z-index: 1;
+            text-align: center; }
           #partner .partner-row .partner-list-container .partner-list .partner a:hover {
             cursor: pointer; }
     @media (max-width: 970px) {
@@ -1358,8 +1359,15 @@ nav {
         #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
           height: 100px; }
         #partner .partner-row .partner-list-container .partner-list .partner a {
-          font-size: 11px; } }
+          font-size: 14px; } }
 
 @media (max-width: 550px) {
   #partner {
     padding: 10px 0 0 0; } }
+
+#kontakt {
+  background: #000000;
+  padding: 40px 0 80px 0; }
+  #kontakt #map {
+    height: 400px;
+    width: 90%; }
