@@ -1368,6 +1368,135 @@ nav {
 #kontakt {
   background: #000000;
   padding: 40px 0 80px 0; }
-  #kontakt #map {
-    height: 400px;
-    width: 90%; }
+  #kontakt .kontakt-text {
+    text-align: center;
+    margin-bottom: 30px; }
+    #kontakt .kontakt-text p {
+      font-size: 18px;
+      margin: 0 10px 20px 10px; }
+    #kontakt .kontakt-text a {
+      color: white;
+      font-size: 35px;
+      font-weight: 400;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    #kontakt .kontakt-text .phone-icon {
+      height: 25px;
+      width: 25px;
+      margin-right: 12px; }
+    #kontakt .kontakt-text a:hover {
+      cursor: pointer;
+      color: #bfbfbf; }
+  #kontakt .kontakt-info-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    margin: 0 0 20px 0; }
+    #kontakt .kontakt-info-row .kontakt-info {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 500px;
+      height: 400px;
+      margin: 0 20px; }
+      #kontakt .kontakt-info-row .kontakt-info h3 {
+        font-size: 20px;
+        color: white;
+        margin: 30px 0 5px 0; }
+      #kontakt .kontakt-info-row .kontakt-info p {
+        font-size: 15px; }
+      #kontakt .kontakt-info-row .kontakt-info a {
+        font-size: 18px;
+        color: white;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #kontakt .kontakt-info-row .kontakt-info a:hover {
+        color: #bfbfbf;
+        cursor: pointer; }
+      #kontakt .kontakt-info-row .kontakt-info .fax-number {
+        color: #919191; }
+      #kontakt .kontakt-info-row .kontakt-info .fax-number:hover {
+        cursor: auto; }
+  #kontakt .map-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%; }
+    #kontakt .map-container #map {
+      height: 400px;
+      width: 95%; }
+  @media (max-width: 700px) {
+    #kontakt .kontakt-text p {
+      font-size: 16px; }
+    #kontakt .kontakt-text a {
+      font-size: 30px; }
+    #kontakt .kontakt-text .phone-icon {
+      height: 22px;
+      width: 22px; }
+    #kontakt .kontakt-info-row .kontakt-info a {
+      font-size: 16px; } }
+  @media (max-width: 615px) {
+    #kontakt .kontakt-info-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #kontakt .kontakt-info-row .kontakt-info {
+        width: 90%;
+        height: 350px;
+        margin: 0 20px; }
+    #kontakt .map-container {
+      margin-top: -60px; }
+      #kontakt .map-container #map {
+        height: 320px;
+        width: 95%; } }
+  @media (max-width: 450px) {
+    #kontakt .kontakt-text p {
+      font-size: 13px; }
+    #kontakt .kontakt-text a {
+      font-size: 28px; }
+    #kontakt .kontakt-info-row {
+      margin: 0 0 20px 0; }
+      #kontakt .kontakt-info-row .kontakt-info h3 {
+        font-size: 17px; }
+      #kontakt .kontakt-info-row .kontakt-info p {
+        font-size: 13px; }
+      #kontakt .kontakt-info-row .kontakt-info a {
+        font-size: 16px; } }
+
+@media (max-width: 550px) {
+  #kontakt {
+    padding: 10px 0 50px 0; } }

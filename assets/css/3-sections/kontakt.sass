@@ -1,6 +1,108 @@
 #kontakt
     background: #000000
     padding: 40px 0 80px 0
-    #map
-        height: 400px
-        width: 90%
+    .kontakt-text
+        text-align: center
+        margin-bottom: 30px
+        p
+            font-size: 18px
+            margin: 0 10px 20px 10px
+        a
+            color: white
+            font-size: 35px
+            font-weight: 400
+            transition: all 0.3s ease-in-out
+        .phone-icon
+            height: 25px
+            width: 25px
+            margin-right: 12px
+        a:hover
+            cursor: pointer
+            color: #bfbfbf
+    .kontakt-info-row
+        display: flex
+        flex-direction: row
+        justify-content: center
+        max-width: 100%
+        margin: 0 0 20px 0
+        .kontakt-info
+            //border: 2px solid gray
+            position: relative
+            display: flex
+            flex-direction: column
+            //align-items: center
+            //justify-content: center
+            width: 500px
+            height: 400px
+            margin: 0 20px
+            h3
+                font-size: 20px
+                color: white
+                margin: 30px 0 5px 0
+            p
+                font-size: 15px
+            a
+                font-size: 18px
+                color: white
+                transition: all 0.3s ease-in-out
+            a:hover
+                color: #bfbfbf
+                cursor: pointer
+            .fax-number
+                color: hsl(0, 0%, 57%)
+            .fax-number:hover
+                cursor: auto
+
+    .map-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        max-width: 100%
+        #map
+            height: 400px
+            width: 95%
+    @media(max-width: 700px)
+        .kontakt-text
+            p
+                font-size: 16px
+            a
+                font-size: 30px
+            .phone-icon
+                height: 22px
+                width: 22px
+        .kontakt-info-row
+            //margin: 0 0 60px 0
+            .kontakt-info
+                a
+                    font-size: 16px
+    @media(max-width: 615px)
+        .kontakt-info-row
+            flex-direction: column
+            align-items: center
+            .kontakt-info
+                width: 90%
+                height: 350px
+                margin: 0 20px
+        .map-container
+            margin-top: -60px
+            #map
+                height: 320px
+                width: 95%
+    @media(max-width: 450px)
+        .kontakt-text
+            p
+                font-size: 13px
+            a
+                font-size: 28px
+        .kontakt-info-row
+            margin: 0 0 20px 0
+            .kontakt-info
+                h3
+                    font-size: 17px
+                p
+                    font-size: 13px
+                a
+                    font-size: 16px
+@media (max-width: 550px)
+    #kontakt
+        padding: 10px 0 50px 0

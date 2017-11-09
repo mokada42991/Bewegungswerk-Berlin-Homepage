@@ -38,6 +38,19 @@ $(document).ready(function() {
             scrollTop: $(".hero").offset().top
         }, 1700, "easeInOutExpo");
     });
+    // Termin button scroll animation
+    $(".termin-button").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $("#kontakt").offset().top - 20
+        }, 1700, "easeInOutExpo");
+    });
+
+    $(".kontakt-address").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $("#map").offset().top - 20
+        }, 1700, "easeInOutExpo");
+    });
+
 
     // Show and hide therapie info
     $(".open-info").on("click", function() {
