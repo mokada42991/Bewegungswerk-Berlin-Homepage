@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Fade in logo on load
-    $(".logo").hide().delay(1000).fadeIn(3000);
-    
+    $(".logo svg").delay(1000).fadeIn(3000);
+
     // Detect if user is on mobile and change the facebook link to the appropriate version.
     function detectMobile() {
         if( navigator.userAgent.match(/Android/i)
