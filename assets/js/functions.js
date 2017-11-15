@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // Fade in logo on load
+    $(".logo").hide().delay(1000).fadeIn(3000);
+    
     // Detect if user is on mobile and change the facebook link to the appropriate version.
     function detectMobile() {
         if( navigator.userAgent.match(/Android/i)
@@ -44,11 +47,11 @@ $(document).ready(function() {
             scrollTop: $("#kontakt").offset().top - 20
         }, 1700, "easeInOutExpo");
     });
-
+    // Scroll to map animation
     $(".kontakt-address").on("click", function() {
         $("html, body").animate({
-            scrollTop: $("#map").offset().top - 20
-        }, 1700, "easeInOutExpo");
+            scrollTop: $("#map").offset().top - 70
+        }, 1700);
     });
 
 
@@ -59,6 +62,18 @@ $(document).ready(function() {
     });
     $(".close-info").on("click", function() {
         $(this).parent().fadeOut("slow");
+    });
+
+    // Show and hide impressum
+    $(".show-impressum").on("click", function() {
+        $(".impressum").fadeIn("slow");
+        $(".impressum").css("display", "block");
+        $("html, body").animate({
+            scrollTop: $(".impressum").offset().top - 20
+        }, 1700);
+    });
+    $(".close-impressum").on("click", function() {
+        $(".impressum").fadeOut("slow");
     });
 
     // Change the opacity of the partner logo on hover
