@@ -594,7 +594,7 @@ body {
 .facebook-link:hover {
   cursor: pointer; }
   .facebook-link:hover path {
-    fill: #293133; }
+    fill: #3b5998; }
 
 @media (max-width: 650px) {
   .header-logo {
@@ -722,13 +722,13 @@ body {
       z-index: 1;
       width: 97vw;
       height: auto; }
-  .hero .arrow {
+  .hero .hero-arrow {
     display: none;
     position: relative;
     z-index: 1;
     margin-top: -25px;
     margin-left: -32px; }
-    .hero .arrow .arrow-border {
+    .hero .hero-arrow .arrow-border {
       position: absolute;
       width: 30px;
       height: 30px;
@@ -738,7 +738,7 @@ body {
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
   @media (max-width: 500px) {
-    .hero .arrow {
+    .hero .hero-arrow {
       display: block; } }
 
 nav {
@@ -1364,6 +1364,175 @@ nav {
   #partner {
     padding: 10px 0 0 0; } }
 
+#news {
+  background: #333333;
+  padding: 40px 0 40px 0; }
+  #news h2 {
+    border-bottom: 1px solid #57545f; }
+  #news .news-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    #news .news-container .news-row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      max-width: 95%;
+      margin: 0 0 50px 0; }
+      #news .news-container .news-row .news-image {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 500px;
+        height: 340px;
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-4.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
+        background-image: linear-gradient(to right, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
+        background-position: center;
+        background-size: cover; }
+      #news .news-container .news-row .news-image2 {
+        background-image: -webkit-gradient(linear, right top, left top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-3.jpg);
+        background-image: -webkit-linear-gradient(right, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
+        background-image: linear-gradient(to left, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
+        background-position: center;
+        background-size: cover; }
+      #news .news-container .news-row .news-article {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: left;
+        -webkit-align-items: left;
+            -ms-flex-align: left;
+                align-items: left;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 400px;
+        height: 340px;
+        padding: 15px;
+        background: #404040;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        #news .news-container .news-row .news-article h4 {
+          color: white;
+          font-size: 15px;
+          margin: 0; }
+        #news .news-container .news-row .news-article h3 {
+          color: white;
+          font-size: 20px;
+          margin: 8px 0 12px 0; }
+        #news .news-container .news-row .news-article p {
+          font-size: 12px;
+          margin: 0; }
+      @media (max-width: 870px) {
+        #news .news-container .news-row .news-article h4 {
+          font-size: 12px; }
+        #news .news-container .news-row .news-article h3 {
+          font-size: 16px; }
+        #news .news-container .news-row .news-article p {
+          font-size: 11px; } }
+    @media (max-width: 670px) {
+      #news .news-container .news-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0 0 25px 0; }
+        #news .news-container .news-row .news-image {
+          width: 100%;
+          height: 200px;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-4.jpg);
+          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
+          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg); }
+        #news .news-container .news-row .news-image2 {
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-3.jpg);
+          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
+          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg); }
+        #news .news-container .news-row .news-article {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          height: auto;
+          padding: 10px; } }
+    #news .news-container a {
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      padding: 8px 15px;
+      background: none;
+      color: white;
+      border: 3px solid #595959;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    #news .news-container a:hover {
+      cursor: pointer;
+      background: #0d0d0d; }
+    #news .news-container svg {
+      vertical-align: middle;
+      margin: 0 0 3px 10px;
+      height: 30px;
+      width: 30px; }
+      #news .news-container svg path {
+        fill: white; }
+
+@media (max-width: 550px) {
+  #news {
+    padding: 10px 0 40px 0; } }
+
 #kontakt {
   background: #000000;
   padding: 40px 0 80px 0; }
@@ -1482,7 +1651,7 @@ nav {
     #kontakt .kontakt-facebook-link-container .kontakt-facebook-link:hover {
       cursor: pointer; }
       #kontakt .kontakt-facebook-link-container .kontakt-facebook-link:hover svg path {
-        fill: #293133; }
+        fill: #3b5998; }
   @media (max-width: 700px) {
     #kontakt .kontakt-text p {
       font-size: 16px; }

@@ -1,0 +1,104 @@
+#news
+    background: #333333
+    padding: 40px 0 40px 0
+    h2
+        border-bottom: 1px solid #57545f
+    .news-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 100%
+        .news-row
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            max-width: 95%
+            margin: 0 0 50px 0
+            .news-image
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                width: 500px
+                height: 340px
+                background:
+                    image: linear-gradient(to right, rgba(64, 64, 64, 0.2), rgba(64, 64, 64, 1)), url(../img/therapien/therapien-4.jpg)
+                    position: center
+                    size: cover
+            .news-image2
+                background:
+                    image: linear-gradient(to left, rgba(64, 64, 64, 0.2), rgba(64, 64, 64, 1)), url(../img/therapien/therapien-3.jpg)
+                    position: center
+                    size: cover
+            .news-article
+                display: flex
+                flex-direction: column
+                align-items: left
+                justify-content: center
+                width: 400px
+                height: 340px
+                padding: 15px
+                background: #404040
+                box-sizing: border-box
+                h4
+                    color: white
+                    font-size: 15px
+                    margin: 0
+                h3
+                    color: white
+                    font-size: 20px
+                    margin: 8px 0 12px 0
+                p
+                    //color: white
+                    font-size: 12px
+                    margin: 0
+            @media (max-width: 870px)
+                .news-article
+                    h4
+                        font-size: 12px
+                    h3
+                        font-size: 16px
+                    p
+                        font-size: 11px
+        @media (max-width: 670px)
+            .news-row
+                flex-direction: column
+                margin: 0 0 25px 0
+                .news-image
+                    width: 100%
+                    height: 200px
+                    background:
+                        image: linear-gradient(rgba(64, 64, 64, 0.2), rgba(64, 64, 64, 1)), url(../img/therapien/therapien-4.jpg)
+                .news-image2
+                    background:
+                        image: linear-gradient(rgba(64, 64, 64, 0.2), rgba(64, 64, 64, 1)), url(../img/therapien/therapien-3.jpg)
+                .news-article
+                    order: 2
+                    flex-direction: column
+                    width: 100%
+                    height: auto
+                    padding: 10px
+        a
+            font-size: 15px
+            font-family: "Open Sans", sans-serif
+            font-weight: 700
+            padding: 8px 15px
+            background: none
+            color: white
+            border: 3px solid #595959
+            transition: all 0.3s ease-in-out
+        a:hover
+            cursor: pointer
+            background: #0d0d0d
+        svg
+            vertical-align: middle
+            margin: 0 0 3px 10px
+            height: 30px
+            width: 30px
+            path
+                fill: white
+
+@media (max-width: 550px)
+    #news
+        padding: 10px 0 40px 0

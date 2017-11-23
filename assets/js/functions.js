@@ -13,6 +13,8 @@ $(document).ready(function() {
             || navigator.userAgent.match(/Windows Phone/i)
         ) {
             $(".facebook-link").attr("href", "fb://profile/457541911052222");
+            $(".kontakt-facebook-link").attr("href", "fb://profile/457541911052222");
+            $(".news-facebook-link").attr("href", "fb://profile/457541911052222");
         }
     };
 
@@ -41,6 +43,12 @@ $(document).ready(function() {
             scrollTop: $(".hero").offset().top
         }, 1700, "easeInOutExpo");
     });
+    // Hero arrow scroll animation
+    $(".hero-arrow, .arrow-border").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $("#welcome").offset().top - 20
+        }, 1200, "easeInOutExpo");
+    });
     // Termin button scroll animation
     $(".termin-button").on("click", function() {
         $("html, body").animate({
@@ -51,7 +59,7 @@ $(document).ready(function() {
     $(".kontakt-address").on("click", function() {
         $("html, body").animate({
             scrollTop: $("#map").offset().top - 70
-        }, 1700);
+        }, 1700, "easeInOutExpo");
     });
 
 
