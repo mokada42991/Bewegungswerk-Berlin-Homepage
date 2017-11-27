@@ -544,11 +544,12 @@ body {
   background: #293133;
   overflow: hidden; }
   .header-logo .logo-image {
-    width: 140px; }
+    width: 120px;
+    margin: -50px 0 0 5px; }
   .header-logo .logo-text {
     position: absolute;
-    width: 170px;
-    margin-left: -85px; }
+    width: 140px;
+    margin: -82px 0 0 -95px; }
 
 .header-logo:hover {
   cursor: pointer; }
@@ -604,12 +605,12 @@ body {
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
     .header-logo .logo-image {
-      width: 100px;
-      margin: -53px 0 0 0; }
+      width: 80px;
+      margin: -60px 0 0 3px; }
     .header-logo .logo-text {
       position: absolute;
-      width: 128px;
-      margin: -47px 0 0 -60px; }
+      width: 110px;
+      margin: -85px 0 0 -67px; }
   .header-bar {
     height: 30px;
     line-height: 30px;
@@ -632,12 +633,12 @@ body {
     -webkit-border-bottom-left-radius: 0px;
             border-bottom-left-radius: 0px; }
     .header-logo .logo-image {
-      width: 60px;
-      margin: -100px 0 0 0; }
+      width: 50px;
+      margin: -65px 0 0 2px; }
     .header-logo .logo-text {
       position: absolute;
-      width: 80px;
-      margin: -94px 0 0 -36px; }
+      width: 65px;
+      margin: -80px 0 0 -40px; }
   .header-bar {
     height: 25px;
     line-height: 25px;
@@ -720,8 +721,9 @@ body {
       display: none;
       position: relative;
       z-index: 1;
-      width: 97vw;
-      height: auto; }
+      width: 90vw;
+      height: auto;
+      max-width: 450px; }
   .hero .hero-arrow {
     display: none;
     position: relative;
@@ -1216,11 +1218,12 @@ nav {
       height: 120px;
       background: rgba(26, 26, 26, 0.7); }
       #partner .partner-row .logo-container .logo-image {
-        width: 130px; }
+        width: 160px;
+        margin: -30px 0 0 20px; }
       #partner .partner-row .logo-container .logo-text {
         position: absolute;
-        width: 215px;
-        margin-left: -47px; }
+        width: 240px;
+        margin: -85px 0 0 -137px; }
     #partner .partner-row .partner-list-container {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1306,11 +1309,11 @@ nav {
         width: 220px;
         height: 90px; }
         #partner .partner-row .logo-container .logo-image {
-          width: 100px;
-          margin: -45px 0 0 -3px; }
+          width: 120px;
+          margin: -45px 0 0 15px; }
         #partner .partner-row .logo-container .logo-text {
-          width: 160px;
-          margin: -50px 0 0 -36px; }
+          width: 180px;
+          margin: -85px 0 0 -103px; }
       #partner .partner-row .partner-list-container .partner-list .partner {
         width: 220px;
         height: 90px; }
@@ -1536,25 +1539,43 @@ nav {
 #kontakt {
   background: #000000;
   padding: 40px 0 80px 0; }
-  #kontakt .kontakt-text {
-    text-align: center;
-    margin-bottom: 30px; }
-    #kontakt .kontakt-text p {
-      font-size: 18px;
-      margin: 0 10px 20px 10px; }
-    #kontakt .kontakt-text a {
-      color: white;
-      font-size: 35px;
-      font-weight: 400;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    #kontakt .kontakt-text .phone-icon {
-      height: 25px;
-      width: 25px;
-      margin-right: 12px; }
-    #kontakt .kontakt-text a:hover {
-      cursor: pointer;
-      color: #bfbfbf; }
+  #kontakt .kontakt-text-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #kontakt .kontakt-text-container .kontakt-text {
+      text-align: center;
+      padding: 25px;
+      margin-bottom: 30px;
+      background: #737373;
+      max-width: 85vw; }
+      #kontakt .kontakt-text-container .kontakt-text p {
+        color: white;
+        font-size: 18px;
+        margin: 0 10px 20px 10px; }
+      #kontakt .kontakt-text-container .kontakt-text a {
+        color: white;
+        font-size: 35px;
+        font-weight: 400;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #kontakt .kontakt-text-container .kontakt-text .phone-icon {
+        height: 25px;
+        width: 25px;
+        margin-right: 12px; }
+      #kontakt .kontakt-text-container .kontakt-text a:hover {
+        cursor: pointer;
+        color: #bfbfbf; }
   #kontakt .kontakt-info-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1653,17 +1674,19 @@ nav {
       #kontakt .kontakt-facebook-link-container .kontakt-facebook-link:hover svg path {
         fill: #3b5998; }
   @media (max-width: 700px) {
-    #kontakt .kontakt-text p {
-      font-size: 16px; }
-    #kontakt .kontakt-text a {
-      font-size: 30px; }
-    #kontakt .kontakt-text .phone-icon {
-      height: 22px;
-      width: 22px; }
+    #kontakt .kontakt-text-container .kontakt-text {
+      padding: 15px; }
+      #kontakt .kontakt-text-container .kontakt-text p {
+        font-size: 16px; }
+      #kontakt .kontakt-text-container .kontakt-text a {
+        font-size: 30px; }
+      #kontakt .kontakt-text-container .kontakt-text .phone-icon {
+        height: 22px;
+        width: 22px; }
     #kontakt .kontakt-info-row .kontakt-info a {
       font-size: 16px; } }
   @media (max-width: 615px) {
-    #kontakt .kontakt-text {
+    #kontakt .kontakt-text-container .kontakt-text {
       margin-bottom: 10px; }
     #kontakt .kontakt-info-row {
       -webkit-box-orient: vertical;
@@ -1685,9 +1708,9 @@ nav {
         height: 320px;
         width: 95%; } }
   @media (max-width: 450px) {
-    #kontakt .kontakt-text p {
-      font-size: 13px; }
-    #kontakt .kontakt-text a {
+    #kontakt .kontakt-text-container .kontakt-text p {
+      font-size: 12px; }
+    #kontakt .kontakt-text-container .kontakt-text a {
       font-size: 28px; }
     #kontakt .kontakt-info-row {
       margin: 0 0 20px 0; }
