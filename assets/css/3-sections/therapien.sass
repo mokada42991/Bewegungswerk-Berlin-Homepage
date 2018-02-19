@@ -1,22 +1,22 @@
 #therapien
     background: #1a1a1a
     padding: 40px 0 80px 0
-    .therapien-grid-container
+    //.therapien-grid-container
         display: flex
         align-items: center
         flex-direction: column
         width: 100%
-    .therapien-grid
+    //.therapien-grid
         display: flex
         align-items: center
         justify-content: center
         flex-direction: column
         max-width: 98%
-    .therapien-row
+    //.therapien-row
         display: flex
         flex-direction: row
         max-width: 98%
-    .therapien-div
+    //.therapien-div
         position: relative
         display: flex
         flex-direction: column
@@ -71,7 +71,7 @@
                 font-size: 12px
                 margin: 0 7px
                 text-align: center
-    @media (max-width: 600px)
+    //@media (max-width: 600px)
         .therapien-row
             flex-direction: column
             align-items: center
@@ -79,31 +79,222 @@
             width: 95vw
             h3
                 font-size: 18px
-    .therapien-div-bg1
-        background:
-            image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-1.jpg)
-            position: center
-            size: cover
-    .therapien-div-bg2
-        background:
-            image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-2.jpg)
-            position: center
-            size: cover
-    .therapien-div-bg3
-        background:
-            image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-3.jpg)
-            position: center
-            size: cover
-    .therapien-div-bg4
-        background:
-            image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-4.jpg)
-            position: center
-            size: cover
-    .therapien-div-bg5
-        background:
-            image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-5.jpg)
-            position: center
-            size: cover
+
+    .therapien-slideshow-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 100%
+    .therapien-slideshow
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 85%
+        position: relative
+        .therapien-slide
+            display: none
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 550px
+            h3
+                font-size: 22px
+                color: white
+                margin-top: 35px
+            button
+                font-size: 15px
+                font-family: "Open Sans", sans-serif
+                font-weight: 700
+                padding: 10px
+                background: none
+                color: white
+                border: 3px solid #595959
+                transition: all 0.3s ease-in-out
+            button:hover
+                cursor: pointer
+                background: #0d0d0d
+        .therapien-info
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            display: none
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            width: 100%
+            button.close-info
+                position: absolute
+                top: 0
+                right: 0
+                padding: 3px 8px
+                border: 2px solid #595959
+            button.close-info:hover
+                cursor: pointer
+                background: #0d0d0d
+            h3
+                font-size: 15px
+                margin: 0 0 10px 0
+            p
+                font-size: 12px
+                margin: 3px 7vw
+                text-align: justify
+            ul
+                margin: 1px 7vw
+                padding: 0
+                li
+                    font-size: 12px
+                    //margin: 1px 0
+                    text-align: justify
+                ul
+                    margin: 0 0 0 35px
+        .therapien-div-bg1
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000128.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg2
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000126.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg3
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000127.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg4
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000133.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg5
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000131.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg6
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg7
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000136.jpg)
+                position: center
+                size: cover
+        .therapien-div-bg8
+            background:
+                image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000130.jpg)
+                position: center
+                size: cover
+        a
+            position: absolute
+            top: 50%
+            width: auto
+            color: white
+            font-weight: bold
+            font-size: 20px
+            padding: 10px
+            border: 3px solid #595959
+            transition: all 0.3s ease-in-out
+        a:hover
+            cursor: pointer
+            background: #0d0d0d
+        a.prevSlide
+            left: 0
+            margin: 0 0 0 10px
+        a.nextSlide
+            right: 0
+            margin: 0 10px 0 0
+    @media (max-width: 900px)
+        .therapien-slideshow
+            width: 97%
+            .therapien-slide
+                h3
+                    font-size: 16px
+            a
+                padding: 7px
+            a.prevSlide
+                margin: 0 0 0 5px
+            a.nextSlide
+                margin: 0 5px 0 0
+    @media (max-width: 650px)
+        .therapien-slideshow
+            .therapien-info
+                p
+                    font-size: 9px
+                ul
+                    li
+                        font-size: 9px
+
+            a
+                padding: 3px
+                font-size: 12px
+            a.prevSlide
+                margin: 0 0 0 1px
+            a.nextSlide
+                margin: 0 1px 0 0
+    .therapien-list-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 100%
+        //.therapien-list
+            display: flex
+            flex-direction: row
+            width: 85%
+            height: 80px
+            //.therapien-list-div
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                text-align: center
+                //background: black
+                //border: 1px solid black
+                width: 12.5%
+                position: relative
+                color: white
+                font-size: 10px
+                padding: 3px
+        .therapien-list
+            display: flex
+            flex-direction: row
+            width: 85%
+            height: 40px
+            .therapien-list-div
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                text-align: center
+                //border: 0.5px solid #4d4d4d
+                width: 25%
+                position: relative
+                color: white
+                font-size: 12px
+                //font-weight: bolder
+                padding: 3px
+                transition: all 0.3s ease-in-out
+            .therapien-list-div:hover
+                cursor: pointer
+            .active
+                background: #4d4d4d
+
+        @media (max-width: 900px)
+            .therapien-list
+                width: 99%
+        @media (max-width: 900px)
+            .therapien-list
+                .therapien-list-div
+                    font-size: 8px
+
+
+
 @media (max-width: 550px)
     #therapien
         padding: 10px 0 50px 0

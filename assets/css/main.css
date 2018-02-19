@@ -679,23 +679,26 @@ body {
     width: 100%;
     background-size: contain; }
   .hero .bg-3 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/hero/praxis-4.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis-4.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis-4.jpg);
-    background-position: center;
-    background-size: cover; }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000129.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000129.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000129.jpg);
+    background-position: 0% 30%;
+    background-size: cover;
+    background-background-repeat: no-repeat; }
   .hero .bg-2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/hero/praxis-2.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis-2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis-2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-background-repeat: no-repeat; }
   .hero .bg-1 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/hero/praxis.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/hero/praxis.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.98))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.98)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-background-repeat: none; }
   .hero .logo {
     height: 75vh;
     min-height: 450px;
@@ -895,7 +898,7 @@ nav {
       #team .team-row .team-member .portrait {
         width: auto;
         height: 250px;
-        opacity: 0.7; }
+        opacity: 0.6; }
       #team .team-row .team-member .team-member-bio {
         display: block;
         padding: 10px; }
@@ -994,7 +997,7 @@ nav {
 #therapien {
   background: #1a1a1a;
   padding: 40px 0 80px 0; }
-  #therapien .therapien-grid-container {
+  #therapien .therapien-slideshow-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1009,7 +1012,7 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%; }
-  #therapien .therapien-grid {
+  #therapien .therapien-slideshow {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1018,69 +1021,48 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 98%; }
-  #therapien .therapien-row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    max-width: 98%; }
-  #therapien .therapien-div {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 480px;
-    height: 240px; }
-    #therapien .therapien-div h3 {
-      font-size: 18px;
-      color: white;
-      margin-top: 35px; }
-    @media (max-width: 700px) {
-      #therapien .therapien-div h3 {
-        font-size: 16px; } }
-    #therapien .therapien-div button {
-      font-size: 15px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      padding: 10px;
-      background: none;
-      color: white;
-      border: 3px solid #595959;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    #therapien .therapien-div button:hover {
-      cursor: pointer;
-      background: #0d0d0d; }
-    #therapien .therapien-div .therapien-info {
+    width: 85%;
+    position: relative; }
+    #therapien .therapien-slideshow .therapien-slide {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      height: 550px; }
+      #therapien .therapien-slideshow .therapien-slide h3 {
+        font-size: 22px;
+        color: white;
+        margin-top: 35px; }
+      #therapien .therapien-slideshow .therapien-slide button {
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        padding: 10px;
+        background: none;
+        color: white;
+        border: 3px solid #595959;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #therapien .therapien-slideshow .therapien-slide button:hover {
+        cursor: pointer;
+        background: #0d0d0d; }
+    #therapien .therapien-slideshow .therapien-info {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -1102,67 +1084,184 @@ nav {
               justify-content: center;
       height: 100%;
       width: 100%; }
-      #therapien .therapien-div .therapien-info button.close-info {
+      #therapien .therapien-slideshow .therapien-info button.close-info {
         position: absolute;
         top: 0;
         right: 0;
         padding: 3px 8px;
         border: 2px solid #595959; }
-      #therapien .therapien-div .therapien-info button.close-info:hover {
+      #therapien .therapien-slideshow .therapien-info button.close-info:hover {
         cursor: pointer;
         background: #0d0d0d; }
-      #therapien .therapien-div .therapien-info h3 {
+      #therapien .therapien-slideshow .therapien-info h3 {
         font-size: 15px;
-        margin: 0 0 15px 0; }
-      #therapien .therapien-div .therapien-info p {
+        margin: 0 0 10px 0; }
+      #therapien .therapien-slideshow .therapien-info p {
         font-size: 12px;
-        margin: 0 7px;
-        text-align: center; }
-  @media (max-width: 600px) {
-    #therapien .therapien-row {
-      -webkit-box-orient: vertical;
+        margin: 3px 7vw;
+        text-align: justify; }
+      #therapien .therapien-slideshow .therapien-info ul {
+        margin: 1px 7vw;
+        padding: 0; }
+        #therapien .therapien-slideshow .therapien-info ul li {
+          font-size: 12px;
+          text-align: justify; }
+        #therapien .therapien-slideshow .therapien-info ul ul {
+          margin: 0 0 0 35px; }
+    #therapien .therapien-slideshow .therapien-div-bg1 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000128.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000128.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000128.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg2 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000126.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000126.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000126.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg3 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000127.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000127.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000127.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg4 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000133.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000133.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000133.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg5 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000131.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000131.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000131.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg6 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000132.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg7 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000136.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000136.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000136.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow .therapien-div-bg8 {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000130.jpg);
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000130.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000130.jpg);
+      background-position: center;
+      background-size: cover; }
+    #therapien .therapien-slideshow a {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      border: 3px solid #595959;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    #therapien .therapien-slideshow a:hover {
+      cursor: pointer;
+      background: #0d0d0d; }
+    #therapien .therapien-slideshow a.prevSlide {
+      left: 0;
+      margin: 0 0 0 10px; }
+    #therapien .therapien-slideshow a.nextSlide {
+      right: 0;
+      margin: 0 10px 0 0; }
+  @media (max-width: 900px) {
+    #therapien .therapien-slideshow {
+      width: 97%; }
+      #therapien .therapien-slideshow .therapien-slide h3 {
+        font-size: 16px; }
+      #therapien .therapien-slideshow a {
+        padding: 7px; }
+      #therapien .therapien-slideshow a.prevSlide {
+        margin: 0 0 0 5px; }
+      #therapien .therapien-slideshow a.nextSlide {
+        margin: 0 5px 0 0; } }
+  @media (max-width: 650px) {
+    #therapien .therapien-slideshow .therapien-info p {
+      font-size: 9px; }
+    #therapien .therapien-slideshow .therapien-info ul li {
+      font-size: 9px; }
+    #therapien .therapien-slideshow a {
+      padding: 3px;
+      font-size: 12px; }
+    #therapien .therapien-slideshow a.prevSlide {
+      margin: 0 0 0 1px; }
+    #therapien .therapien-slideshow a.nextSlide {
+      margin: 0 1px 0 0; } }
+  #therapien .therapien-list-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    #therapien .therapien-list-container .therapien-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    #therapien .therapien-div {
-      width: 95vw; }
-      #therapien .therapien-div h3 {
-        font-size: 18px; } }
-  #therapien .therapien-div-bg1 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/therapien/therapien-1.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-1.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-1.jpg);
-    background-position: center;
-    background-size: cover; }
-  #therapien .therapien-div-bg2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/therapien/therapien-2.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-2.jpg);
-    background-position: center;
-    background-size: cover; }
-  #therapien .therapien-div-bg3 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/therapien/therapien-3.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-3.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-3.jpg);
-    background-position: center;
-    background-size: cover; }
-  #therapien .therapien-div-bg4 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/therapien/therapien-4.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-4.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-4.jpg);
-    background-position: center;
-    background-size: cover; }
-  #therapien .therapien-div-bg5 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/therapien/therapien-5.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-5.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/therapien/therapien-5.jpg);
-    background-position: center;
-    background-size: cover; }
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 85%;
+      height: 40px; }
+      #therapien .therapien-list-container .therapien-list .therapien-list-div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        width: 25%;
+        position: relative;
+        color: white;
+        font-size: 12px;
+        padding: 3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #therapien .therapien-list-container .therapien-list .therapien-list-div:hover {
+        cursor: pointer; }
+      #therapien .therapien-list-container .therapien-list .active {
+        background: #4d4d4d; }
+    @media (max-width: 900px) {
+      #therapien .therapien-list-container .therapien-list {
+        width: 99%; } }
+    @media (max-width: 900px) {
+      #therapien .therapien-list-container .therapien-list .therapien-list-div {
+        font-size: 8px; } }
 
 @media (max-width: 550px) {
   #therapien {
@@ -1188,9 +1287,9 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.6))), url(../img/partners/partners-bg.jpg);
-    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/partners/partners-bg.jpg);
-    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/partners/partners-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.6))), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000135.jpg);
+    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000135.jpg);
+    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000135.jpg);
     background-position: center;
     background-size: cover; }
     #partner .partner-row-container p {
@@ -1427,15 +1526,15 @@ nav {
                 justify-content: center;
         width: 500px;
         height: 340px;
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-4.jpg);
-        background-image: -webkit-linear-gradient(left, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
-        background-image: linear-gradient(to right, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+        background-image: -webkit-linear-gradient(left, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+        background-image: linear-gradient(to right, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
         background-position: center;
         background-size: cover; }
       #news .news-container .news-row .news-image2 {
-        background-image: -webkit-gradient(linear, right top, left top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-3.jpg);
-        background-image: -webkit-linear-gradient(right, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
-        background-image: linear-gradient(to left, rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
+        background-image: -webkit-gradient(linear, right top, left top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg);
+        background-image: -webkit-linear-gradient(right, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg);
+        background-image: linear-gradient(to left, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg);
         background-position: center;
         background-size: cover; }
       #news .news-container .news-row .news-article {
@@ -1491,13 +1590,13 @@ nav {
         #news .news-container .news-row .news-image {
           width: 100%;
           height: 200px;
-          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-4.jpg);
-          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg);
-          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-4.jpg); }
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
+          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg); }
         #news .news-container .news-row .news-image2 {
-          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/therapien/therapien-3.jpg);
-          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg);
-          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/therapien/therapien-3.jpg); }
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg);
+          background-image: -webkit-linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg);
+          background-image: linear-gradient(rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000122.jpg); }
         #news .news-container .news-row .news-article {
           -webkit-box-ordinal-group: 3;
           -webkit-order: 2;
@@ -1557,7 +1656,8 @@ nav {
       text-align: center;
       padding: 25px;
       margin-bottom: 30px;
-      background: #737373;
+      background: #262626;
+      border: white solid 3px;
       max-width: 85vw; }
       #kontakt .kontakt-text-container .kontakt-text p {
         color: white;

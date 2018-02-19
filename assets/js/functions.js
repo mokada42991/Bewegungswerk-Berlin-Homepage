@@ -62,6 +62,75 @@ $(document).ready(function() {
         }, 1700, "easeInOutExpo");
     });
 
+    // Therapie slideshow
+
+    var slideIndex = 0;
+    function showSlide(n) {
+        var slides = document.getElementsByClassName("therapien-slide");
+        var therapienList = document.getElementsByClassName("therapien-list-div");
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (var i = 0; i < therapienList.length; i++) {
+            therapienList[i].className = therapienList[i].className.replace("active", "");
+        }
+        slides[slideIndex].style.display = "flex";
+        therapienList[slideIndex].className += " active";
+    }
+    showSlide(slideIndex);
+
+    $(".therapien-list-div").on("click", function() {
+        var therapienList = document.getElementsByClassName("therapien-list-div");
+        var therapieName = this.innerHTML;
+        for (var i = 0; i < therapienList.length; i++) {
+            if (therapieName == therapienList[i].innerHTML) {
+                slideIndex = i;
+            }
+        }
+        showSlide(slideIndex);
+    });
+
+    $(".nextSlide").on("click", function() {
+        if (slideIndex < 7) {
+            slideIndex += 1;
+            showSlide(slideIndex);
+        } else {
+            slideIndex = 0;
+            showSlide(slideIndex);
+        }
+    });
+    $(".prevSlide").on("click", function() {
+        if (slideIndex > 0) {
+            slideIndex -= 1;
+            showSlide(slideIndex);
+        } else {
+            slideIndex = 7;
+            showSlide(slideIndex);
+        }
+    });
+
+
+
+
+    //var slideIndex = 1;
+    //showSlide(slideIndex);
+
+    //function slideScroll(n) {
+        //showSlide(slideIndex += n);
+    //}
+
+    //function currentSlide(n) {
+        //showSlide(slideIndex = n);
+    //}
+
+    //function showSlide(n) {
+        //var i;
+        //var slides = document.getElementsByClassName("therapien-slide");
+        //var listTabs = document.getElementsByClassName("therapien-list-div");
+        //if (n > slides.length) { slideIndex = 1 }
+
+    //}
+
 
     // Show and hide therapie info
     $(".open-info").on("click", function() {
