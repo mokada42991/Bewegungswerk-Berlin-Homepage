@@ -63,7 +63,6 @@ $(document).ready(function() {
     });
 
     // Therapie slideshow
-
     var slideIndex = 0;
     function showSlide(n) {
         var slides = document.getElementsByClassName("therapien-slide");
@@ -88,10 +87,13 @@ $(document).ready(function() {
             }
         }
         showSlide(slideIndex);
+        //$("html, body").animate({
+            //scrollTop: $(".therapien-slideshow").offset().top - 50
+        //}, 1200, "easeInOutExpo");
     });
 
     $(".nextSlide").on("click", function() {
-        if (slideIndex < 7) {
+        if (slideIndex < 11) {
             slideIndex += 1;
             showSlide(slideIndex);
         } else {
@@ -104,7 +106,7 @@ $(document).ready(function() {
             slideIndex -= 1;
             showSlide(slideIndex);
         } else {
-            slideIndex = 7;
+            slideIndex = 11;
             showSlide(slideIndex);
         }
     });

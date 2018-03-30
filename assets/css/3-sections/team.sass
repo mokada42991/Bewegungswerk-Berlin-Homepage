@@ -21,19 +21,22 @@
         justify-content: center
         .team-member
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: flex-start
-            margin: 5px
+            margin: 30px 30px
             padding: 0
             background: black
-            width: 400px
+            max-width: 350px
             .portrait
-                width: auto
-                height: 250px
+                width: 100%
+                height: auto
                 opacity: 0.9
             .team-member-bio
-                display: block
-                padding: 10px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                padding: 20px
                 h3
                     font-size: 18px
                     color: white
@@ -42,11 +45,13 @@
                     font-size: 15px
                     font-weight: 400
                     color: white
-                    margin: 0 0 10px 0
+                    margin: 5px 0 10px 0
                 p
                     font-size: 12px
                     color: #919191
                     margin: 0 0 5px 0
+                    span
+                        color: white
                 ul
                     margin: 0
                     padding: 0
@@ -55,8 +60,7 @@
                         font-size: 11px
                         color: #919191
                         span
-                            position: relative
-                            left: -5px
+                            text-align: center
         @media (max-width: 1100px)
             .team-member
                 flex-direction: column
@@ -65,34 +69,43 @@
                 width: 280px
                 .team-member-bio
                     margin: 5px 0 0 0
-                h3
-                    text-align: center
-                h4
-                    text-align: center
+                    h3
+                        font-size: 17px
+                        text-align: center
+                    h4
+                        font-size: 14px
+                        text-align: center
+                    p
+                        font-size: 12px
+                        text-align: center
     @media (max-width: 600px)
         .team-row
             flex-direction: column
             align-items: center
             .team-member
                 display: flex
-                flex-direction: row
+                flex-direction: column
                 justify-content: flex-start
                 padding: 0
-                width: 320px
+                margin: 10px 0
+                width: 80%
+                min-width: 315px
                 .portrait
-                    height: 180px
-                    width: auto
+                    height: auto
+                    width: 100%
                 .team-member-bio
-                    padding: 0
-                    margin: 0 0 0 10px
-                    width: 170px
+                    padding: 20px
+                    margin: 0
+                    text-align: center
+                    width: 100%
                     h3
                         font-size: 15px
-                        text-align: left
+                        //text-align: left
                     h4
                         font-size: 13px
-                        text-align: left
+                        //text-align: left
                     p
+                        //text-align: left
                         font-size: 11px
 @media (max-width: 550px)
     #team

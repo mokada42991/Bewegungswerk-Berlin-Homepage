@@ -667,14 +667,14 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
+  height: 85vh;
   min-height: 450px;
   width: 100%;
   background-color: black; }
   .hero .background {
     position: absolute;
     display: none;
-    height: 75vh;
+    height: 85vh;
     min-height: 450px;
     width: 100%;
     background-size: contain; }
@@ -785,7 +785,6 @@ nav {
     font-size: 15px;
     color: white;
     border-right: 1px solid #2B292E;
-    border-left: 1px solid #2B292E;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
   nav a:hover {
@@ -814,7 +813,7 @@ nav {
   #welcome p {
     margin: 0;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     padding: 35px 60px; }
   #welcome button {
     font-size: 15px;
@@ -882,26 +881,39 @@ nav {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      margin: 5px;
+      margin: 30px 30px;
       padding: 0;
       background: black;
-      width: 400px; }
+      max-width: 350px; }
       #team .team-row .team-member .portrait {
-        width: auto;
-        height: 250px;
+        width: 100%;
+        height: auto;
         opacity: 0.9; }
       #team .team-row .team-member .team-member-bio {
-        display: block;
-        padding: 10px; }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        padding: 20px; }
         #team .team-row .team-member .team-member-bio h3 {
           font-size: 18px;
           color: white;
@@ -910,11 +922,13 @@ nav {
           font-size: 15px;
           font-weight: 400;
           color: white;
-          margin: 0 0 10px 0; }
+          margin: 5px 0 10px 0; }
         #team .team-row .team-member .team-member-bio p {
           font-size: 12px;
           color: #919191;
           margin: 0 0 5px 0; }
+          #team .team-row .team-member .team-member-bio p span {
+            color: white; }
         #team .team-row .team-member .team-member-bio ul {
           margin: 0;
           padding: 0;
@@ -923,8 +937,7 @@ nav {
             font-size: 11px;
             color: #919191; }
             #team .team-row .team-member .team-member-bio ul li span {
-              position: relative;
-              left: -5px; }
+              text-align: center; }
     @media (max-width: 1100px) {
       #team .team-row .team-member {
         -webkit-box-orient: vertical;
@@ -943,10 +956,15 @@ nav {
         width: 280px; }
         #team .team-row .team-member .team-member-bio {
           margin: 5px 0 0 0; }
-        #team .team-row .team-member h3 {
-          text-align: center; }
-        #team .team-row .team-member h4 {
-          text-align: center; } }
+          #team .team-row .team-member .team-member-bio h3 {
+            font-size: 17px;
+            text-align: center; }
+          #team .team-row .team-member .team-member-bio h4 {
+            font-size: 14px;
+            text-align: center; }
+          #team .team-row .team-member .team-member-bio p {
+            font-size: 12px;
+            text-align: center; } }
   @media (max-width: 600px) {
     #team .team-row {
       -webkit-box-orient: vertical;
@@ -963,30 +981,31 @@ nav {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         -webkit-box-pack: start;
         -webkit-justify-content: flex-start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
         padding: 0;
-        width: 320px; }
+        margin: 10px 0;
+        width: 80%;
+        min-width: 315px; }
         #team .team-row .team-member .portrait {
-          height: 180px;
-          width: auto; }
+          height: auto;
+          width: 100%; }
         #team .team-row .team-member .team-member-bio {
-          padding: 0;
-          margin: 0 0 0 10px;
-          width: 170px; }
+          padding: 20px;
+          margin: 0;
+          text-align: center;
+          width: 100%; }
           #team .team-row .team-member .team-member-bio h3 {
-            font-size: 15px;
-            text-align: left; }
+            font-size: 15px; }
           #team .team-row .team-member .team-member-bio h4 {
-            font-size: 13px;
-            text-align: left; }
+            font-size: 13px; }
           #team .team-row .team-member .team-member-bio p {
             font-size: 11px; } }
 
@@ -1011,6 +1030,7 @@ nav {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 60px 0 0 0;
     width: 100%; }
   #therapien .therapien-slideshow {
     display: -webkit-box;
@@ -1099,13 +1119,16 @@ nav {
       #therapien .therapien-slideshow .therapien-info p {
         font-size: 12px;
         margin: 3px 7vw;
-        text-align: justify; }
+        text-align: justify;
+        color: #cccccc; }
       #therapien .therapien-slideshow .therapien-info ul {
         margin: 1px 7vw;
-        padding: 0; }
+        padding: 0;
+        color: #cccccc; }
         #therapien .therapien-slideshow .therapien-info ul li {
           font-size: 12px;
-          text-align: justify; }
+          text-align: justify;
+          color: #cccccc; }
         #therapien .therapien-slideshow .therapien-info ul ul {
           margin: 0 0 0 35px; }
     #therapien .therapien-slideshow .therapien-div-bg1 {
@@ -1177,8 +1200,10 @@ nav {
       right: 0;
       margin: 0 10px 0 0; }
   @media (max-width: 900px) {
+    #therapien .therapien-slideshow-container {
+      margin: 40px 0 0 0; }
     #therapien .therapien-slideshow {
-      width: 97%; }
+      width: 98%; }
       #therapien .therapien-slideshow .therapien-slide h3 {
         font-size: 16px; }
       #therapien .therapien-slideshow a {
@@ -1225,7 +1250,7 @@ nav {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 85%;
-      height: 40px; }
+      height: 60px; }
       #therapien .therapien-list-container .therapien-list .therapien-list-div {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1245,23 +1270,31 @@ nav {
             -ms-flex-pack: center;
                 justify-content: center;
         text-align: center;
+        background: #0d0d0d;
         width: 25%;
         position: relative;
         color: white;
-        font-size: 12px;
+        font-size: 14px;
         padding: 3px;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
       #therapien .therapien-list-container .therapien-list .therapien-list-div:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background: #333333; }
       #therapien .therapien-list-container .therapien-list .active {
         background: #4d4d4d; }
     @media (max-width: 900px) {
       #therapien .therapien-list-container .therapien-list {
-        width: 99%; } }
-    @media (max-width: 900px) {
-      #therapien .therapien-list-container .therapien-list .therapien-list-div {
-        font-size: 8px; } }
+        width: 99%; }
+        #therapien .therapien-list-container .therapien-list .therapien-list-div {
+          padding: 1px;
+          font-size: 10px; } }
+    @media (max-width: 500px) {
+      #therapien .therapien-list-container .therapien-list {
+        height: 60px; }
+        #therapien .therapien-list-container .therapien-list .therapien-list-div {
+          padding: 1px;
+          font-size: 8px; } }
 
 @media (max-width: 550px) {
   #therapien {
@@ -1287,9 +1320,9 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.6))), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
-    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
-    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.6)), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(rgba(38, 38, 38, 0.8))), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
+    background-image: -webkit-linear-gradient(#262626, rgba(38, 38, 38, 0.8)), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
+    background-image: linear-gradient(#262626, rgba(38, 38, 38, 0.8)), url(../img/BewegungsWerk-Photos/2018-02-19-PHOTO-00000151.jpg);
     background-position: center;
     background-size: cover; }
     #partner .partner-row-container p {
@@ -1366,7 +1399,7 @@ nav {
           width: 300px;
           overflow: hidden;
           position: relative;
-          margin: 0 10px 10px 0;
+          margin: 0 10px 30px 0;
           background: rgba(26, 26, 26, 0.7); }
           #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
             position: absolute;
@@ -1441,7 +1474,7 @@ nav {
         #partner .partner-row .partner-list-container .partner-list .partner {
           width: 220px;
           height: 90px;
-          margin: 0 5px 10px 5px; }
+          margin: 0 5px 30px 5px; }
           #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
             height: 110px; }
           #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
@@ -1454,7 +1487,7 @@ nav {
       #partner .partner-row .partner-list-container .partner-list .partner {
         width: 154px;
         height: 90px;
-        margin: 0 2px 10px 2px; }
+        margin: 0 2px 30px 2px; }
         #partner .partner-row .partner-list-container .partner-list .partner .team-logo {
           height: 110px; }
         #partner .partner-row .partner-list-container .partner-list .partner .doctor-logo {
@@ -1468,7 +1501,7 @@ nav {
 
 #news {
   background: #333333;
-  padding: 40px 0 40px 0; }
+  padding: 40px 0 70px 0; }
   #news h2 {
     border-bottom: 1px solid #57545f; }
   #news .news-container {
@@ -1485,7 +1518,8 @@ nav {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    margin: 40px 0 0 0; }
     #news .news-container .news-row {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1524,8 +1558,8 @@ nav {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        width: 500px;
-        height: 340px;
+        width: 700px;
+        height: 400px;
         background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 64, 64, 0.2)), to(#404040)), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
         background-image: -webkit-linear-gradient(left, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
         background-image: linear-gradient(to right, rgba(64, 64, 64, 0.2), #404040), url(../img/bewegungswerkphotos/2018-02-19-PHOTO-00000124.jpg);
@@ -1556,7 +1590,7 @@ nav {
             -ms-flex-pack: center;
                 justify-content: center;
         width: 400px;
-        height: 340px;
+        height: 400px;
         padding: 15px;
         background: #404040;
         -webkit-box-sizing: border-box;
@@ -1651,12 +1685,13 @@ nav {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-top: 40px; }
     #kontakt .kontakt-text-container .kontakt-text {
       text-align: center;
       padding: 25px;
       margin-bottom: 30px;
-      background: #262626;
+      background: #666666;
       border: white solid 3px;
       max-width: 85vw; }
       #kontakt .kontakt-text-container .kontakt-text p {
@@ -1756,7 +1791,7 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 50px; }
+    margin-top: 100px; }
     #kontakt .kontakt-facebook-link-container .kontakt-facebook-link {
       height: 50px;
       width: 50px; }
@@ -1821,7 +1856,7 @@ nav {
       #kontakt .kontakt-info-row .kontakt-info a {
         font-size: 16px; }
     #kontakt .kontakt-facebook-link-container {
-      margin-top: 35px; }
+      margin-top: 60px; }
       #kontakt .kontakt-facebook-link-container .kontakt-facebook-link {
         height: 35px;
         width: 35px; }

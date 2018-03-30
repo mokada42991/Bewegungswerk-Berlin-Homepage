@@ -84,6 +84,7 @@
         display: flex
         align-items: center
         flex-direction: column
+        margin: 60px 0 0 0
         width: 100%
     .therapien-slideshow
         display: flex
@@ -142,13 +143,16 @@
                 font-size: 12px
                 margin: 3px 7vw
                 text-align: justify
+                color: #cccccc
             ul
                 margin: 1px 7vw
                 padding: 0
+                color: #cccccc
                 li
                     font-size: 12px
                     //margin: 1px 0
                     text-align: justify
+                    color: #cccccc
                 ul
                     margin: 0 0 0 35px
         .therapien-div-bg1
@@ -211,8 +215,10 @@
             right: 0
             margin: 0 10px 0 0
     @media (max-width: 900px)
+        .therapien-slideshow-container
+            margin: 40px 0 0 0
         .therapien-slideshow
-            width: 97%
+            width: 98%
             .therapien-slide
                 h3
                     font-size: 16px
@@ -265,32 +271,40 @@
             display: flex
             flex-direction: row
             width: 85%
-            height: 40px
+            height: 60px
             .therapien-list-div
                 display: flex
                 flex-direction: column
                 align-items: center
                 justify-content: center
                 text-align: center
-                //border: 0.5px solid #4d4d4d
+                //border-top: 1px solid #4d4d4d
+                //border-right: 1px solid #4d4d4d
+                background: #0d0d0d
                 width: 25%
                 position: relative
                 color: white
-                font-size: 12px
+                font-size: 14px
                 //font-weight: bolder
                 padding: 3px
                 transition: all 0.3s ease-in-out
             .therapien-list-div:hover
                 cursor: pointer
+                background: #333333
             .active
                 background: #4d4d4d
 
         @media (max-width: 900px)
             .therapien-list
                 width: 99%
-        @media (max-width: 900px)
-            .therapien-list
                 .therapien-list-div
+                    padding: 1px
+                    font-size: 10px
+        @media (max-width: 500px)
+            .therapien-list
+                height: 60px
+                .therapien-list-div
+                    padding: 1px
                     font-size: 8px
 
 
