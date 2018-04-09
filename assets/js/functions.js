@@ -78,6 +78,7 @@ $(document).ready(function() {
     }
     showSlide(slideIndex);
 
+    // Onclick function to show each therapie in the list
     $(".therapien-list-div").on("click", function() {
         var therapienList = document.getElementsByClassName("therapien-list-div");
         var therapieName = this.innerHTML;
@@ -111,9 +112,6 @@ $(document).ready(function() {
         }
     });
 
-
-
-
     //var slideIndex = 1;
     //showSlide(slideIndex);
 
@@ -133,7 +131,6 @@ $(document).ready(function() {
 
     //}
 
-
     // Show and hide therapie info
     $(".open-info").on("click", function() {
         $(this).next().fadeIn("slow");
@@ -141,6 +138,33 @@ $(document).ready(function() {
     });
     $(".close-info").on("click", function() {
         $(this).parent().fadeOut("slow");
+    });
+
+    // Change the opacity of the partner logo on hover
+    $("#partner .partner-row .partner-list-container .partner-list .partner a").hover(
+        function() {
+            $(this).prev().css("opacity", "0.4")
+        }, function() {
+            $(this).prev().css("opacity", "0.2")
+        }
+    );
+
+    // Form send verification
+    $(".kontakt-form-text input").on("click", function() {
+        var form = $(".kontakt-formular form")
+        var name = $(".kontakt-form-info-name").val();
+        var email = $(".kontakt-form-info-email").val();
+        var tel = $(".kontakt-form-info-tel").val();
+        var message = $(".kontakt-form-text textarea").val();
+        if (name && email && message) {
+            console.log("success");
+            //form.submit();
+        } else if (name && tel && message) {
+            console.log("success");
+            //form.submit();
+        } else {
+            alert("Bitte das Formular vollständig ausfüllen.");
+        }
     });
 
     // Show and hide impressum
@@ -154,15 +178,6 @@ $(document).ready(function() {
     $(".close-impressum").on("click", function() {
         $(".impressum").fadeOut("slow");
     });
-
-    // Change the opacity of the partner logo on hover
-    $("#partner .partner-row .partner-list-container .partner-list .partner a").hover(
-        function() {
-            $(this).prev().css("opacity", "0.4")
-        }, function() {
-            $(this).prev().css("opacity", "0.2")
-        }
-    );
 
     detectMobile();
     backgroundSlideshow();
